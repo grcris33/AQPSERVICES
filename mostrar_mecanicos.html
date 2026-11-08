@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mostrar Mecánicos</title>
+    <link rel="stylesheet" href="estilologin1.css">
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e2e2e2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logotipo.png" alt="Logotipo AQPSERVICE">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="borrador_Inicio.html">AQPService</a></li>
+                <li><a href="borrador_Inicio.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Mostrar Mecánicos Registrados</h1>
+        <?php include 'mostrar_mecanicos.php'; ?>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<form action="mecanicobd.php" method="post">
+    <label for="nombre">Nombre del mecánico:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <link rel="stylesheet" href="Registromecanico.css">
+  
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" required>
+  
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visualización de Selección</title>
+    </head>
+    <body>
+       
+        <div class="form-group">
+            <label for="ciudad-select">Ciudad de nacimiento:</label>
+            <select id="ciudad-select" name="ciudad" onchange="actualizarCiudad()">
+                <option value="">Seleccione su ciudad</option>
+                <option value="Amazonas">Amazonas</option>
+                <option value="Ancash">Ancash</option>
+                <option value="Apurimac">Apurimac</option>
+                <option value="Arequipa">Arequipa</option>
+                <option value="Ayacucho">Ayacucho</option>
+                <option value="Cajamarca">Cajamarca</option>
+                <option value="Callao">Callao</option>
+                <option value="Cusco">Cusco</option>
+                <option value="Huancavelica">Huancavelica</option>
+                <option value="Huanuco">Huanuco</option>
+                <option value="Ica">Ica</option>
+                <option value="Junin">Junin</option>
+                <option value="LaLibertad">La Libertad</option>
+                <option value="Lambayeque">Lambayeque</option>
+                <option value="Lima">Lima</option>
+                <option value="Loreto">Loreto</option>
+                <option value="Madrededios">Madre de Dios</option>
+                <option value="Moquegua">Moquegua</option>
+                <option value="Pasco">Pasco</option>
+                <option value="Piura">Piura</option>
+                <option value="Puno">Puno</option>
+                <option value="SanMartin">San Martin</option>
+                <option value="Tacna">Tacna</option>
+                <option value="Tumbes">Tumbes</option>
+                <option value="Ucayali">Ucayali</option>
+            </select>
+        </div>
+        
+        <br><br>
+        <div class="form-group">
+            <label for="ciudad-nacimiento">Ciudad seleccionada:</label>
+            <input type="text" id="ciudad-nacimiento" name="ciudad-nacimiento" readonly>
+        </div>
+    
+        <script>
+            function actualizarCiudad() {
+                var select = document.getElementById("ciudad-select");
+                var input = document.getElementById("ciudad-nacimiento");
+                var ciudadSeleccionada = select.options[select.selectedIndex].text;
+                
+                if (ciudadSeleccionada !== "Seleccione su ciudad") {
+                    input.value = ciudadSeleccionada;
+                } else {
+                    input.value = "";
+                }
+            }
+        </script>
+    </body>
+    </html>
+    
+  
+    <label for="dni">DNI:</label>
+    <input type="text" id="dni" name="dni" required>
+  
+    <label for="id-mecanico">Telefono:</label>
+    
+    <input type="text" id="id-mecanico" name="id-mecanico" required>
+    <button onclick="location.href='InicioAdmi.html'">ATRAS</button>
+    <button type="submit">CREAR</button>
+  </form>

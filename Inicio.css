@@ -1,0 +1,168 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+img {
+  width: 400px; /* Ancho deseado */
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:rgba(0, 0, 0, 0.705);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  /*background-color: green;*/
+  color: white;
+  padding: 100px 100;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+nav ul a:hover
+{
+  background-color: rgba(0, 128, 0, 0.616); 
+}
+
+nav ul {
+  list-style: none;
+  text-align: right;
+  margin-right: 0px;
+  
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f0f0f0;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.section {
+  
+  background-color: white;
+  margin-bottom: 40px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.705);
+}
+
+.section h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+
+.section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  
+}
+
+.boton {
+  display: inline-block;
+  background-color:rgba(0, 0, 0, 0.705);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: orange;
+}
+
+.testimonio {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.testimonio p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.autor {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  clear: both;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 120px;
+  }
+
+  nav ul li {
+    margin-right: 10px;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  .boton {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}

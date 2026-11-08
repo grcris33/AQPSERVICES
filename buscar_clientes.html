@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscar Clientes</title>
+    <link rel="stylesheet" href="estilologin1.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logotipo.png" alt="Logotipo AQPSERVICE">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="borrador_Inicio.html">AQPService</a></li>
+                <li><a href="borrador_Inicio.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Buscar Clientes</h1>
+        <form action="resultados_busqueda.php" method="get">
+            <div class="form-group">
+                <label for="criterio">Buscar por nombre o correo:</label>
+                <input type="text" id="criterio" name="criterio" required>
+            </div>
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+</body>
+</html>
